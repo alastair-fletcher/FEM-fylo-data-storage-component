@@ -54,7 +54,6 @@ body {
 }
 
 .body {
-  border-radius: 10px;
   height: 170px;
   position: relative;
   display: flex;
@@ -117,13 +116,13 @@ body {
   }
 }
 
-.bold {
-  font-weight: 700;
-}
-
 // utility classes
 .border-radius {
   border-radius: 10px;
+}
+
+.bold {
+  font-weight: 700;
 }
 
 .range {
@@ -166,16 +165,14 @@ body {
       align-self: flex-end;
       top: -30%;
       width: 32%;
-      border-radius: 10px 10px 0px 10px;
-      // position: relative;
+      border-radius: 10px 10px 0 10px;
 
       &::after {
         content: '';
         position: absolute;
         top: 67px;
-        right: 0px;
+        right: 0;
         height: 0;
-
         border-top: 23px solid white;
         border-left: 23px solid transparent;
       }
